@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1622046_indoor_0.Sports Facility Manager</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>Sports Facility Manager</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 10:41:01</sys_created_on>
+        <sys_id>7831e0178364d310ac771896feaad34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1622046_indoor_0.Sports Facility Manager</sys_name>
+        <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name>sys_user_role_7831e0178364d310ac771896feaad34d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 10:41:01</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</application>
+        <file_path/>
+        <instance_id>56aa2e253b958b10986d048aa4e45a71</instance_id>
+        <instance_name>dev399443</instance_name>
+        <name>sys_user_role_7831e0178364d310ac771896feaad34d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><federated_id/><grantable>true</grantable><includes_roles/><name>x_1622046_indoor_0.Sports Facility Manager</name><scoped_admin>false</scoped_admin><suffix>Sports Facility Manager</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-19 10:41:01</sys_created_on><sys_id>7831e0178364d310ac771896feaad34d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1622046_indoor_0.Sports Facility Manager</sys_name><sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package><sys_policy/><sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope><sys_update_name>sys_user_role_7831e0178364d310ac771896feaad34d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-19 10:41:01</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>119930680</payload_hash>
+        <record_name>x_1622046_indoor_0.Sports Facility Manager</record_name>
+        <reverted_from/>
+        <source>c1dc1303832c9310ac771896feaad3df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 10:41:01</sys_created_on>
+        <sys_id>a56168178364d310ac771896feaad386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1f36541980000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 10:41:01</sys_updated_on>
+        <type>Role</type>
+        <update_guid>65616817a864d310263537955b679b85</update_guid>
+        <update_guid_history>65616817a864d310263537955b679b85:119930680</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1622046_indoor_0.Sports Facility Manager">f52260978364d310ac771896feaad3fc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 10:44:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>09cd03f3c336438494a5e889f22d8e71</sys_id>
+        <sys_metadata>7831e0178364d310ac771896feaad34d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1622046_indoor_0.Sports Facility Manager</sys_name>
+        <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_scope_delete display_value="">050875acd9ef4664bd2ebfe64f0b5c10</sys_scope_delete>
+        <sys_update_name>sys_user_role_7831e0178364d310ac771896feaad34d</sys_update_name>
+        <sys_update_version display_value="sys_user_role_7831e0178364d310ac771896feaad34d">a56168178364d310ac771896feaad386</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 10:44:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

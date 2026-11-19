@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7851a38b832c9310ac771896feaad31c" label="Facility Inspection" max_length="40" name="x_1622046_indoor_0_facility_inspection" type="collection">
+        <element choice="1" label="Overall Condition" max_length="40" name="overall_condition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Good" sequence="1" value="Good"/>
+                <element inactive_on_update="false" label="Poor" sequence="3" value="Poor"/>
+                <element inactive_on_update="false" label="Excellent" sequence="0" value="Excellent"/>
+                <element inactive_on_update="false" label="Average" sequence="2" value="Average"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Corrective Action Details" max_length="40" name="corrective_action_details" type="string"/>
+        <element label="Inspection Date" max_length="40" name="inspection_date" type="glide_date"/>
+        <element label="Corrective Action Required" max_length="40" name="corrective_action_required" type="boolean"/>
+        <element label="Findings" max_length="40" name="findings" type="string"/>
+        <element label="Inspector" max_length="32" name="inspector" reference="sys_user" type="reference"/>
+        <element choice="1" label="Safety Status" max_length="40" name="safety_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Safe" sequence="0" value="Safe"/>
+                <element inactive_on_update="false" label="Needs Attention" sequence="2" value="Needs Attention"/>
+                <element inactive_on_update="false" label="Unsafe" sequence="1" value="Unsafe"/>
+            </choice>
+        </element>
+        <element label="Sports Facility" max_length="32" name="sports_facility" reference="x_1622046_indoor_0_sports_facility" type="reference"/>
+        <index name="index">
+            <element name="inspector"/>
+        </index>
+        <index name="index2">
+            <element name="sports_facility"/>
+        </index>
+    </element>
+</database>

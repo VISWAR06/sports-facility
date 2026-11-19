@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>sports_equipment_replacement_approval</internal_name>
+        <label_cache>[{"name":"Created_1.current.sports_facility.sys_id","label":"Trigger - Record Created➛Sports Service Request Record➛Sports Facility➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1622046_indoor_0_sports_facility","column_name":"sys_id","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"f43b2591-4d9b-49d0-afba-66ceed01cdf5":["conditions"]},"attributes":null},{"name":"f43b2591-4d9b-49d0-afba-66ceed01cdf5.Record.facility_managerfacility_manager","label":"1 - Look Up Record➛Sports Facility Record➛Facility ManagerFacility Manager","reference":"sys_user","reference_display":"Facility ManagerFacility Manager","type":"reference","base_type":"reference","parent_table_name":"x_1622046_indoor_0_sports_facility","column_name":"facility_managerfacility_manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"5f2e0bc3-7cb3-4832-825c-64139ee632cd":["approval_conditions"]},"attributes":null},{"name":"Created_1.current.requested_by.email","label":"Trigger - Record Created➛Sports Service Request Record➛Requested By➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"c83870c7-b075-4340-ad2f-3694546ea584":["ah_to"],"ce071e5e-cfbd-4e76-9fb2-729504380fb2":["ah_to"]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛Sports Service Request Record","reference":"x_1622046_indoor_0_sports_service_request","reference_display":"Sports Service Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"5f2e0bc3-7cb3-4832-825c-64139ee632cd":["record"],"e42e1276-e1c9-4dcc-b85e-451f0c055d28":["record"],"da76b155-e3fb-4388-acbe-cf190c7a172e":["record"],"c83870c7-b075-4340-ad2f-3694546ea584":["record"],"9eb230ef-3c97-4ec7-b3a6-d4de301306f6":["record"],"ce071e5e-cfbd-4e76-9fb2-729504380fb2":["record"]},"attributes":{"":""}},{"name":"5f2e0bc3-7cb3-4832-825c-64139ee632cd.approval_state","label":"3➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Sports Equipment Replacement Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c1ef40df83a0d310ac771896feaad339</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Sports Equipment Replacement Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name>sys_hub_flow_c1ef40df83a0d310ac771896feaad339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:55:12</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>d8e6509f83e0d310ac771896feaad3d2</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c1ef40df83a0d310ac771896feaad339^sys_idNOT IN85ef40df83a0d310ac771896feaad33a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c1ef40df83a0d310ac771896feaad339</id>
+        <name>Sports Equipment Replacement Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:32</sys_created_on>
+        <sys_id>85ef40df83a0d310ac771896feaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:24:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=85ef40df83a0d310ac771896feaad33a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c1ef40df83a0d310ac771896feaad339^sys_idNOT INa3efc0df83a0d310ac771896feaad330,afef049f83a0d310ac771896feaad34d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</model>
+        <model_id>c1ef40df83a0d310ac771896feaad339</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c1ef40df83a0d310ac771896feaad339</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:42</sys_created_on>
+        <sys_id>a3efc0df83a0d310ac771896feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:24:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a3efc0df83a0d310ac771896feaad330"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</model>
+        <model_id>c1ef40df83a0d310ac771896feaad339</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c1ef40df83a0d310ac771896feaad339</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:42</sys_created_on>
+        <sys_id>afef049f83a0d310ac771896feaad34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:24:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afef049f83a0d310ac771896feaad34d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c1ef40df83a0d310ac771896feaad339^sys_idNOT INdfef80df83a0d310ac771896feaad3ab"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:41</sys_created_on>
+        <sys_id>dfef80df83a0d310ac771896feaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:25:04</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91Z227jNhD9FUFPLeACuvgS521rZ9EAaQLY3vYhDQRKJGNiZdIhKWW9Qf691NWyRDu+yIskT4Z5mzOHM2dG0v2LGQIfhealOWIUEkkYNTsmoRJxCsLZaonUVFBMCTW3ABQCyfjKvMQgFKhjYs4WM7RYhkCicpBxiLh5aVtWx4xBGKHpSlxDdZg6goLFxrFmvkSNcfQUISE9qSz/F1mWC6+eIrJcICqNayHUmo4JiVC2Vv/kW9RIMCch5Iial/cPHXMJuDIgE/MvpSs3hH7XLSYJpn4fAIiAFbi26ziW5Vx0bb/v+rYDXYB8rHbpaNL4ITWMJWM39e3JRJUj9EMiChEsCWzyzBGAdzRcD8yVc5lPC/BDkJ/KctdKDuMII+VhkNNT/vVy6rJhPAYSTCWPAhnxkklGAiQybiDCIArlqDqWLbhbpv6mWyTww2I3C6MFvc1oMcsDKjcVCQUCLRNXE+zKeBJA0zl7nhQgvxKa0pI7GbIAhOU/ICUnfiQTOC/mM6BSeJJ5AEKvwvmlmRyc8MIgCsdre2qcPD4i7hG6jKQwXzumWIlRCIRYo1Z0eU9RYjTzId/tpQ5n3r6WUfiVoDAPaxFwspRfAkniIg9eO+sE4xFVR3jlRTfTLKW2vIQbIhTi+xcTF/zlTuEimCYRNRg1gojzJD9UwBjF6UaKMwkyfL0Aj7lneIpCFMhKlOFvovrvbyIEoY8V9KXxdKRpPVxVIWTsnGb0oU2NaZIe1/xpX01sG2MfYccaJFpiW66PbWtg9QCGrmUFTkVNmvC24pa1INlQlWLwLIrSjp6sE2FX4NRvJ3fIqibSXmEfb+ZMQcyrTtZOgma3BM15baqre5C8lhGdDY83A3uXazVVLnLuWFkGMAZqByx8PFxl0y1vyykO2bOS8iOkFDOOHjmLKKxLWnKmQdTvxoqWRNQHwffdZtcrjN/yi/z9vQnqmvYilAFdnUVKXWz7Q9RFllJQV4mn3xsO/QA4GA/6A+TYNSldA9Oi/VwS+kbExLqQ2yan2qCPdblygJCeALAhqgcDPF1O85jWimk291Fl83mOqKfAcy9MhLGhno8hgaiYa1c6GqbjtVi0Lx/4Yhj07MEgGKhnOiUfuIt8YHedHhgO+u5FryYfDXC7gEsNV1VBucmGfskzngqTFNsWYfmWTb2D572PlSICSZnU0cPbi3Q9yAxUCn1ys0YqZ4wbya0Y1+uFxhSpsp2+RWit3WBy3mg0lOk/1fiG6aRRvWX0Dw2cNp8hqXqk2YeaLVDeWx9UC5J4k/UzPFii7kVviF29nOGhTs7W8LYD/zx90Z5RFG+NR12DtG/Wxtrk39rRHJGHtQirtjo7erG2SLFbJ8U5Hynuyf1fkcZbn6aPAfuh62Ha/hxfFBlFHsNa0SfYyN/MImj4K0POkaI3VE2/MmUkdtssQ1n33qiKatjIu6j2Cl5Cc93tMTPUhMF/iePnqXq1UDj3ewAEB6DXc7c08sP6ewAdxDc8+Dw18ODoinXBurMQHnZu/UxtKawk32Yw7VnkWvVaX+lO81pb697y+vQqtusthgbFR6xPs/wtdq0epRx5adpvJGf+zXGXAm7Vv/q3gB+e3Xccq9tXHRNkjHuWJ5aMS6GUhcfq1rz8g3ZTFafpOtUbpOuMSbnuVK0McACGDtryMduyKlpZMFfzTmoIrOphus24zSbWnO1SxIz0fQTx4iN9vz41PzAJ1Y16GdOCRTx1eXI1upuMvX+/zEZ/XU28ydV0Nrkeza7GR+ZP7VM1jRZ+muy6vHr4H/tbZOYTIgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c1ef40df83a0d310ac771896feaad339^sys_idNOT IN031058df83a0d310ac771896feaad3c2,16d5dcdb83e0d310ac771896feaad301,2985d0db83e0d310ac771896feaad33c,6004101b83e0d310ac771896feaad3a1,6526581f83e0d310ac771896feaad371,89c65c5f83e0d310ac771896feaad3cd,f594145b83e0d310ac771896feaad30e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:25:29</sys_created_on>
+        <sys_id>031058df83a0d310ac771896feaad3c2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:42:25</sys_updated_on>
+        <ui_id>f43b2591-4d9b-49d0-afba-66ceed01cdf5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX32/iOBD+V6I8U84hQKBvJyqklfa20rbXl72V5cROsc7EWdtpS1H/9xsnDmEhBbJlV13dUxR77Pn1fTPjL2ufU//SH1E0TafT0SRCKAwRGo/DhARxHI6TGMVx4Pf8jCwZSGqpDDarnMHSAxHFZo3oBJYo17kgqzu3QzwjvWdYTxZcUMUy//LL156fEwW3Gab8y/XO1qnmCBIzAaI3oNu7rexpMbH8XIIOyZP6/6M7OqsXpaLWlLDnsyfDMsrAhpQIzXr+kmSUGKlWmxXFCL3ORLOw4JmB23wr/KT5M+gLB1YuZeBVwqq9zS92IaqW0ytiyI1RRWIK5UQrYzXEY71xcxPIlpg789FLr5F/tvJkV56y7QPBC8SbspQUwsx+TGfQVefA6qwcvM4Nl5B1P7R5IbGo3ZeiWGafqlz6GwvvWsBW7Vy9grlCQ7BZbhNqM+TSld4s5OPnOhtznpV2uU0hEyI2f8QYxePC2Lis/ZTilDNBMc8Ez6wmSJuFDxNsCRrwkuQ5z+5xruQDL28FX5b9ewE//VTIRxsLfp/1SWI97wOwSH8O61fl8h1R3EbhL7gGDveswgUcdfqwThTPDX7k9J6ZRnstRaV5JOLftn2HOFwnqnTPf+n5eqVngmjdBBtgir8VNgZV6F30cJmo8khpxZ/gwQNzgbIYKGkbHKQtoTsUrRK9hZf9+tG5cpxgQh2Fa4tIL169ZpUrHVXOS4nvy8fcbnifqo0a3mcrIRN0nhLSRvF9CnZi4D61LNR+H2Z1B34Vm2Ponx5sWtMGZzzFS4gnzwXDiiWAHY2JYjiVRUZx5cMWLWywU660ccL7NPnMIPWZJwFTnlkwr5T2NtIdKXTcj5pCH1KvdsRp0x444pWOeBtHurndpWUPz8a34Zn41rTDOeGizIY2LN9KJ1NKqlfa9pFEHkDEiT39RKOCsxr19qbfRoHW5n/E1jOPBO+lPh0rTQkj8XBAxlEYBAgFiEZoEkXBZBynYxIN04ajGOssgVkCbk4BKnA9rqFR5xnt159qoOhaaE6wqobglcz+KRAaRMazZkF+vdqs44a7ghJLKRjJdirKLXSaP+bOfofX0burKr+ki7+VDQW/fS2wP2tErlR+l9yC/53xbwX7YCE2YWgwCWhyMYmC6GKY0vHFlJLRBZnGoyikLBmmP2MQpqODU+jWKJDIjHLrqt5+N6005tQCPqTr9QyAZhjFQT8pFOTE9HUOg6oGnCdccLPqV/IvL/vEfMNN3bh8gsc1l2fbLreFoR4Adtc+tl1QN6wzUhb9TqR94+j9XjrYSRM2PTiZkmGDp+q6hlFPOBgPBmg4hicGlVJhhHegv8+dm1LAmzcCHSlx3NqaErfO3B3rHRHK37YXaHls5wWK/p8v0Pc5yYFBXABCcJVCLQtVhvIBJ6LQ5YYimXZPn/P1oa//ATeTzQ7YFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=031058df83a0d310ac771896feaad3c2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>8a31cab8-f5bf-4ee4-8e16-ae98e57d55b4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:50:33</sys_created_on>
+        <sys_id>16d5dcdb83e0d310ac771896feaad301</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:51:53</sys_updated_on>
+        <ui_id>da76b155-e3fb-4388-acbe-cf190c7a172e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VUW/aMBD+K8jPKEqAopa3CYQ2qWslqHjpWsuxD/DkxKntUBjiv++cOIBoV9GpD6u0POXOd5fvO38f3G+JFGRA4o6Ik6ukz7tJt9uJ485lL0n73TTpiC4DANImOcsAK1dMlWAxrl4wwYrCaAyodcyV9kcZx10xgZ/AHYhHn4Q6d5u3vmolsFVIWyi2mf39BL6UShjIyeD+oU0KZhCcA0MG25Ojc9kploLC0rEEJewrdN2m8LGDDKE7oDX9On8dmu/CYWsWDrURHlQSx20Cawe5AMQzZ8pCm2QsF8xpsyEDZ0pMGGBIUW32FUuZOxxLfO3ayl8IIOnH1eOr54A0OdQV+5CG7dbp+Yg5NsX53JUmlPKllhxJVQsSMGelcsPjXF1wWzip87rFsVQ13VqVWX5Tr4fsBzSXiZnSIggoPFuPvyY3ny7186QBOZZ5tZlAVGnO1D5izhmZls7D2RJQkOEcmqFMZL6gXiuyakYoWbRQGERzpZ/xm1Yu8ohxjzvC3bJojPlRlZ4xIz2J7zgGm3dtYjd2qJi1Byq4Q/pUeiQ1sUCBVluoVkArWfhmbmThvuCnVhCA79rBTD14U27JQV0GOErkyEzb7RBVgLKnScRLg7tyu91Lx7zbAWdAahwwaTCdYgwOEJqX1YVIcSL/UThpfRsda/+jpN/7L/p/WPTpxVsK41cHQR3NPAh/TZN+pxP3+hSXpLWhMbWFNs5SC2aFF0MNPOEvsXtphmlV15rWda3Jvu59FjmDQGORu0oYrxNq/idOc9fHva2b+iB45OLDPHL5mTwSaHx6k/zJGg+/AV507gleCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=16d5dcdb83e0d310ac771896feaad301"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>e4bdf6e6-413e-47b6-899f-2b3faadac6a0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:49:08</sys_created_on>
+        <sys_id>2985d0db83e0d310ac771896feaad33c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:49:40</sys_updated_on>
+        <ui_id>e42e1276-e1c9-4dcc-b85e-451f0c055d28</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/iMBD8K8jPUZQPilreKhBSpV57gqovvdZy4gUsOXFqOxQO8d9vkziBo72KnvpwlS5vnt21ZyY7D1siOBmSPvAgvAgHaRzGcRQE0Xk/TAZxEkY8ZgAh8UjOMsBODanSHM8rJssK2G5HGpgFTkM/LbWG3O52WOfCFJJt7l0bIulSSI51Mnx49EjBNN5oQZPh9qh0KiXJEpDYOm05HXO0m6I6c5WWGfKiogWv3eTYVXpXY6zgUEUnDDwCaws5ByQyZ9KARzKWc2aV3pCh1SUCKJrf5nLTdSxFbhuhGVsb8RNf7gdV3xxQWepM6I7UGdTA8zGzbIY3p7bUnV9KpGAaTzjMWSnt6BBrGm4LK1TejFiWyHZayTLLbxpHSHfBwf8oDZKAotJZMW9kzWdL9TJtSU5EXlviJEqVMtmdmLVaJKWt6GwJSKg9zlhRiHxBC61Woh5GKpm/kHjw51K94JtGLHKfpRVvH11l/gTxcQ3fMy0qEd/wGhzeecRszEgyY/ZS0EP6XFZMGmFOAq1dqC2g9SZUw6kWhb3Ep1bgiO88t/RB9O6GwX6h6l03B0uP5FAek9RYZkvzowyCmF/WIPCnCoQGu8p737VaaDDmdSb+8paP5egElW2OJgIkN2/IdjmykCF9C7Sx4fco3bli794VuzR9WpzCQVB//0P174YqOXtv3dKL/XYd3LkP1pqGgygK+gOKJimlaUBNobQ11IBe4Y+hGp5xKe3rNM3qvt6s6etNu76P5eUEAW1e7urFeFtQG5lj7PpwtnfTFFxUzj4tKedfKSNOxpcPyZ+i8fgLa5hoZmYJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2985d0db83e0d310ac771896feaad33c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:42:31</sys_created_on>
+        <sys_id>6004101b83e0d310ac771896feaad3a1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:43:28</sys_updated_on>
+        <ui_id>9eb230ef-3c97-4ec7-b3a6-d4de301306f6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvjMBD8K0HPxvgjDW3ejoTAQa+FpOSlV4RsrROBbLmSnCYX8t9vbctOmvZ6LfThCuc37c5KM+Od+z0RnIzJEHgQXoWjNA7jOAqC6HIYJqM4CSMeM4CQeKRgOSBSQ6o0x/OGyaou7PcTDcwCp6GfVlpDYQ8H7HNhSsl2SwfDSroWkmOfjO8fPFIyjTda0GS8P2u9l5JkCUiEzjtO5xztrqzPXKVVjryo6IrXbnLqOoPvU+zgUE0nDDwCWwsFBySSMWnAIzkrOLNK78jY6goLKJrfFnLXI9aisK3QnG2N+IUvD4MalwEqS50J/ZE6g9pyNmWWLfDm1Fa690uJFEzrCYeMVdJOTmst4La0QhXtiGWJ7KaVrPLipnWE9Bec/I/KIAkoa50181ZWtlirp3lHciaKxhInUaqUyf7ErNUiqWxNZ09AQuNxzspSFCtaarURzTBSyf2VxIOfSfWEbxqxKnyW1rx9dJX5M6xPm/KSaVGL+IHX4PDBI2ZnJpIZc5SCHtLHqmbSCnMSaONCYwFtNqEeTrUo7Td8agOO+MFzSx9Eb24YHBeq2XVzsvRIDuUxSY1ltjI/qyCI+RweEYVJeLn9f8V/LBvvYN5lYyZAcvOKFJcNCzkStUBbac/jceeag6Vr9gn5tIiEo6D5/gfl3w1KcvHWuqVXx+06ufMYli0NR1EUDEcUTVJK04CaUmlrqAG9wR9DdZuEl7lZNLjBosUN5j3uY3l5h4AuL3fNYrwuqIvMee36dHZw0zZcVC4+LSmXXykjTsaXD8mfovHwG7k+5AQ6CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6004101b83e0d310ac771896feaad3a1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>e4bdf6e6-413e-47b6-899f-2b3faadac6a0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:51:53</sys_created_on>
+        <sys_id>6526581f83e0d310ac771896feaad371</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:54:20</sys_updated_on>
+        <ui_id>ce071e5e-cfbd-4e76-9fb2-729504380fb2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUHPXle+yXHesjaCDZC0QG10H5pCoEgq5pYSVZKK4zX87x1KlCVf4FhNgqaA38ThUHNmdA6H1NeVy4h76Q5GF54fRn009HrdnudddEejsDeKvIvhyOsQ5LbcBMUUPNE80AKGj4hnZrxajSVFmpKg08aZlDTRbUl/ZFQZW7hs0xgxvl47sIYwlXK0/PILS/GccQIe7uXXby03RRLQaCrdy9XO1KnpcBRSDq4zsZ+bXqZmqLRkyYMd31r/aWkUkpj4vZZLnzRNCIXAEeKKttwYJQRpIZfupZYZGCBN8inhy5rHk2L/Q5ALz/PMfEQhA2yiurVhYCtWmKMJ0gjiZ1hn0rriuWCYqiJ3QiOUcT2u2wqHT6lmIimWaBTycrXgWZx8LLJ3Ny8oPxBYMgUgaGryS/QGfjSdi8XnEuU1S/JS2EkuMOKbEdJQsDDTBs/KpZzG8KIgRmkKZQxSKR5ZvhiwxO0HDoN2xMUCgir2kLQRNsDbUE7Uvgb7JDd/QZKZLO7gNbDYAOcsZjkhXFNyd91y1VKNOVKqSg/qGvzIDLgiWZtWUFTGLMGSpfoKYj5Sm8G6ZSXi+X4Y+uFg2Ks4NcIRGYaRj4a4V9FoAZyWMZLfg5zANbF09kWQo23K7xOwlPy+STDPCHX+LUEdw2mJHwrBKUp2mD8DpB+uTU0q9nePs99a9ug/Z4ZMbsFKRwsHviNfOsjZQDJGPadOjgyekHaYcpTZIpyZcJjNqrai5SxF5sSZ0uCmYUYj+QAPkmIA23Zrouu/X8lZOljr5CBX/ghNvr4AO+TYpk79rX08xLimu33ZNZbcCdFLyf09Hh/A0qSpDH5NVueu8sd1lf5RWmFSEanYx46fvNbrV2D6CZA2h6dii/1cQtuFajlPBM7yD8TIDvEndsa5mVTs917UVK6UEphBXVStgSyYnkNLONALet1toUBnYTkrDwvmppp+B8IpTpcNdBNNKZJ4fs0oN586yeIwZ/q2njB0fxnsMNk2n/fSLfKyBTnhnpEYOsrnqLu9VwuyrGnsPvO8Hk4dg/4vzZJljKkUQodQ1u/5JLl37ws3OgO63Rm2wUnlKjWFoaR4wYe08NhXpw3Q4AXNxHxC8pu2VaS+Vwsr4rmO+Y56/5nd3VayHb6wafmDQc8/d60Xd610QbpEijS1ub1R5+ocv2P3KyrVpFop6yno+N2u1/cDqJgQMvAClQqpVaCofITPFNhfAfuameZ+zrTwg+5T+jU80T2fQNXnTCkPJ2TlsWe7ra91PhYTViqdhlIp9nnb4MwusXW3cbSFVzv/nXX0Yh0xoGLOf5tbHvwNhDQ4frPAW3uyysL/KNY1IZWNYl8ntZmGv8+eR1QqY7rBcwhjkzuPf/6R9ttJ//rkJkc3WeptEee17+wnBC95vHNlb3xj759v7L+fvm96Y//2E8Hc30gsGQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6526581f83e0d310ac771896feaad371"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>8a31cab8-f5bf-4ee4-8e16-ae98e57d55b4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:54:34</sys_created_on>
+        <sys_id>89c65c5f83e0d310ac771896feaad3cd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:55:02</sys_updated_on>
+        <ui_id>c83870c7-b075-4340-ad2f-3694546ea584</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FUHPrivf5DhvXRvBBkhbIDa6D00hUCQVs6VElaTiaA3/e4cSZckXOHaToCngN3M4FM+MzuER/XXpMuJeuoPRheeHUR8NvV6353kX3dEo7I0i72I48joEuS03QTGFTDQPtIDhA+KZGS+XY0mRpiTotHEmJU10W9KfGVUmFuZtGiPGVysH1hCmUo7yL7+xFM8ZJ5DhXn791nJTJAGNptK9XG5NHVsORyHlkDoTu7XpPDVDpSVL7u34xuZPq6CQxOzfa7n0UdOEUNg4QlzRlhujhCAtZO5eaplBAMoknxOeNzIeFfsfNrnwPM/MRxQqwGZXtzEMbMfKcDRBGsH+GdaZtKl4Lhimqqyd0AhlXI+bsTLhc6qZSMolGoW8Wi14Fiefyurd9QOqFwSRTAEImpr6Er2GH03nYnFbobxiSdEKO8kFRnw9QhoaFmba4Fm6lNMYHhTEKE2hjUEqxQMrFgOWuH3PYdCOuFjApordJ22EDfA2tBO1ryA+KcJfkGSmio/wGFhsgHMWs4IQrmm5u2q5KldjjpSqy4O+Bj8zA64s1pYVlJ0xS7Bkqf4Aez5QW8GqZSXi+X4Y+uFg2Ks5NcIRGYaRj4a4V9NoAZyWMZI/goLADbF0dkVQoD2V30dgqfh9nWCeEer8V4E6hNMSPxSCU5RsMX8GSN9fmZ7U7O8eZr+N7NB/zgyZ3JKVjhYOvEeeO8hZQzJBPadOgQx+Ie0w5ShzRDgz4TBbVWNFy8lF5sSZ0pCmYUYjeQ8/JMUAtu02RNd/u5KzdLDRyV6u/BWafHkBdsihQ536G+d4iHFDd7uyO1lyR+xeSe6f8XgPllNMZfB7sjq7yl/nKv2DtMKkJlJ5jh3+8lqtXoDpR0BafzyVR+xtBW0bquU8ETgrXhAjW8Sf2BnnelKz33uWqXxQSmAGfVENA1kwPQdL2OMFve6mUMBZWMHK/YK5rqffgHDKr8sTdBNNKZJ4fsUoN686yeKwYPqmnjC4vwy2mGzN5624RdG2oCDcExJDB/kcdTfPakHyhsbuMs/r4dQx6N9pluQxplIIHUJbfxST5M69K9PoLf1OMeixXPQ+LaO7irQPfWLRaaI9osi1PZUl7tRsxTrXMd9S6b+zjze1PIfPNCd/MOj5Z3d6tjulC9IlUqSpre2VHKpz+C7dr6nUkGStoMeg43e7Xt8PoGNCyMALVCqkVoGi8gFeU2Cv/Ls6mRZ5zrTMA5ep8k78cnu6gNrPTCv3F2TlsRO7aa51PpUTViqdE6VSnufWyGbgXht3GEdbeI3vvLOOnq0jBlQs+G9rKzZ/BSENDt8g8MaZrLLQ+EJDSJVR7OqkMXPi32RPI6qUMV3j2YfxlLuNf/7D7I+T/uXJTQ4estTbIM5L382P2Lzi8dbV/OSbef98M//z9H3Vm/m3X32xZ2wUGQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=89c65c5f83e0d310ac771896feaad3cd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:45:03</sys_created_on>
+        <sys_id>f594145b83e0d310ac771896feaad30e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:47:13</sys_updated_on>
+        <ui_id>5f2e0bc3-7cb3-4832-825c-64139ee632cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXU/jOBT9K1We267zScobokKa1e6MRJl5QShy7BvwyE2K7TB0q/73vUmcJtsypSxFGka8IHx9bZ97fI5j93rlCO6cOhBEfoh/TjKfuJ5LYojimE0IZXEUhYHvDJ2czgEz6WKhigcqEwVUFzl2YKOsevBfLvRC0uW3LsLuhOQKcuf0+mboLKjCWQwo53S11XUoDElTkJh6ZnEMLlscPwVolouqQxsl8lvb/stOM2uDheIVLG/owKOBnAPiyajUMHTmNOfUFGq5ieDU/Esuu8CdyE1T8Jw+avEPrudGpErMAEtklo1NM7FMNeFsSg1FJCUzpdoQVwgGuiGHQ0ZLac77sSbhy8IILLIeYmgq29GFLOf554YRZzNBb2NKjSBgUVVaQbd1ZLO74sdli/JC5DUptlMWjMpNixqkLi1NhWfllOLqKVZBwhznT+a4KxhJqq0R9ZwIcT6+ldgYZ7L4gVi0uM3HlFX1jJFvOr7A+LQOf6NKVMX9jdPg4KFdrr+ppfiai/sSPlU6irw0mpCYj3hG0lEQ++GIMiAjiNwQQh6x0PWd9dDRS30uqdYdUbhDyX1ZldnQZglKGo6rIUyJhTlDmA9guVgPrYuIm3kwmXgkdQnxCYlDRmIfUv8kOvEpj58QaSZA8uOa6AAUOya6sDB+Bs9aqG4mddJ/bVSPH3xuOo5upZiQ9+QlXPw1Vnobz7xc7Q0Fz0ie7RUb9D4c34tS5W+j+ANAtIr/s0GxLfhtcP9H7/6H3n9/vZ/E+6TGSCcpBQyF0RP6anWOm2+AJ+6YlQppMuv1EdR/AKRW/Zctpm2MVu+8YGW9F4JvCX5qewafpp3iyX7FN7o4RPC+9yH3X1LuLNynrWzSSYmXSBKq+8gn+/Prt9qeljCYNgB2IbVPAHYHvJRNODFi51yf2YR6pj+uRP98D492vgfv6XR//csgaa+TlerQPG/2Ljj+jT7Yqz/oiW1zZWZFzkUFVves0Fy0QZ/ly6/Xq1UW+KkXTtxRwCf4PplwMqJZSkdRxAA4cRnPwnFzWI8zyoQUZolc5fQW1HZ7vb7ZNdqbr/cyGx9A4+YThe7Tz9Fq7dw99e2gvpW7Hwhsp7VxcKyP1ju7pb3Wx+/Fsinbex1inbYaNjuTPiZu5HkkiBJkpShUQhK9KJTRiQb1gFuRKLgvQZtdv83qvMGsyRtcbvJe5pMDsLc+ubLgt2qxzqibTz1c6mFbDxf3hR+2xiJPOuLDD7+MH27+BcolH5LcFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f594145b83e0d310ac771896feaad30e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c1ef40df83a0d310ac771896feaad339^sys_idNOT IN9555549b83e0d310ac771896feaad33a,ddb518db83e0d310ac771896feaad33c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5555549b83e0d310ac771896feaad339</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:48:18</sys_created_on>
+        <sys_id>9555549b83e0d310ac771896feaad33a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:51:53</sys_updated_on>
+        <ui_id>e4bdf6e6-413e-47b6-899f-2b3faadac6a0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnW9DDcm3fAgcBCrQN0AS5tIGwIimbKCWqfMRRBf97l3rYRuOiDppjb+ZwdzkzHFotUc7Wzpp7dWWM2FRk9fVxQkTlMfzdEsHIiiwhLdIoTGkSz5M4DOPFLMrnSR7FLAE+m5MJqaDkWElVxYQVqkLoCaTzWNumRczDnCbT9zRPprNFEk8XcUqn81mULDnHmZQFUNdaYU9mLFi+339zYZiwHuUM5zFhagnNwxuPpVshmeaD9Bo0KrFck1X729alVkjIucTS9YkXZ+yxTe0hY7WoNsP649B6N4JKM08lDieEP1teMaS8KkAaPiElVAys0g1ZWe0Q0BzYbSWbQ8VWVBanEV/7bMRP7ieFoa8sOOqivN89LLPB4x4ursECUnHUOj2U0q0SlJveEcYLcNKuT7G+4LbuVHYtFnI5divpyupzbwY5DBivFBFnkASvvVLPfRBS3G3V7svI8kZUnSvDplQU5GEFFr3LnfV8WsIlL3FQVuKFo6OZv3XRNSOXMthIXASFVDs81Oc/AOqJB2gsBDeIX3fwA2jhVXzCMdiMWTCZoVrUo7bucLKfENOYtQRjjhrR3OyH8wx7xYO2rLfHt3SDrvDgJz7I2E+Gl1eEUERLGp2PGyRnopV1wPH5vXw5rw79BSxehP5dn+U/83tN/qO/5H9ALnoAafo///+cf08zByNo1n0rcJz/C3rDB/DoA9wfejCbCoPc7j32YfxC+Y0GEyXoKbRT+rtXdcT2vwBPeAL/6wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d5b518db83e0d310ac771896feaad33c</block>
+        <comment/>
+        <connected_to>e4bdf6e6-413e-47b6-899f-2b3faadac6a0</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Sports Equipment Replacement Approval">c1ef40df83a0d310ac771896feaad339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:49:57</sys_created_on>
+        <sys_id>ddb518db83e0d310ac771896feaad33c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:54:34</sys_updated_on>
+        <ui_id>8a31cab8-f5bf-4ee4-8e16-ae98e57d55b4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c1ef40df83a0d310ac771896feaad339</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:42</sys_created_on>
+        <sys_id>27efc0df83a0d310ac771896feaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:24:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c1ef40df83a0d310ac771896feaad339</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 09:24:42</sys_created_on>
+        <sys_id>a7efc0df83a0d310ac771896feaad32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 09:24:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c1ef40df83a0d310ac771896feaad339"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c1ef40df83a0d310ac771896feaad339"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c1ef40df83a0d310ac771896feaad339"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c1ef40df83a0d310ac771896feaad339"/>
+</record_update>

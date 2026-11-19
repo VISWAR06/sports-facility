@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Sports Service Request</name>
+        <order/>
+        <script><![CDATA[
+function onSubmit() {
+
+    var requestType = g_form.getValue('request_type');
+    var facility = g_form.getValue('sports_facility');
+    var description = g_form.getValue('description');
+    var priority = g_form.getValue('priority');
+    var equipment = g_form.getValue('equipment');
+
+    if (!requestType || !facility ||
+        !description || !priority) {
+
+        g_form.addErrorMessage(
+            'Please provide all mandatory request information.'
+        );
+
+        return false;
+    }
+
+    if (requestType == 'equipment_issue' && !equipment) {
+
+        g_form.addErrorMessage(
+            'Please select equipment for an Equipment Issue request.'
+        );
+
+        return false;
+    }
+
+    return true;
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-19 06:31:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3e76347836c9310ac771896feaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Sports Service Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
+        <sys_update_name>sys_script_client_c3e76347836c9310ac771896feaad35b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-19 06:31:20</sys_updated_on>
+        <table>x_1622046_indoor_0_sports_service_request</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
