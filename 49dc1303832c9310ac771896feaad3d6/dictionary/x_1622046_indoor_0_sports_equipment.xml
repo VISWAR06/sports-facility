@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="62fd1f83832c9310ac771896feaad35c" label="Sports Equipment" max_length="40" name="x_1622046_indoor_0_sports_equipment" type="collection">
+        <element label="Available Quantity" max_length="40" name="available_quantity" type="integer"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Needs Repair" sequence="0" value="Needs Repair"/>
+                <element inactive_on_update="false" label="Under Maintenance" sequence="2" value="Under Maintenance"/>
+                <element inactive_on_update="false" label="Unavailable" sequence="1" value="Unavailable"/>
+                <element inactive_on_update="false" label="Available" sequence="0" value="Available"/>
+            </choice>
+        </element>
+        <element label="Sports Facility" max_length="40" name="sports_facility" reference="x_1622046_indoor_0_sports_facility" type="reference"/>
+        <element label="Equipment ID" max_length="40" name="equipment_id" type="string"/>
+        <element choice="1" label="Condition" max_length="40" name="condition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Needs Repair" sequence="2" value="Needs Repair"/>
+                <element inactive_on_update="false" label="Damaged" sequence="1" value="Damaged"/>
+                <element inactive_on_update="false" label="Good" sequence="0" value="Good"/>
+                <element inactive="true" inactive_on_update="true" label="DamagedDamaged" sequence="0" value="DamagedDamaged"/>
+            </choice>
+        </element>
+        <element label="Equipment Name" max_length="40" name="equipment_name" type="string"/>
+    </element>
+</database>

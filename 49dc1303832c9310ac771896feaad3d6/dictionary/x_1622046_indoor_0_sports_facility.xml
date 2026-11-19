@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="410d1b03832c9310ac771896feaad397" label="Sports Facility" max_length="40" name="x_1622046_indoor_0_sports_facility" type="collection">
+        <element label="Facility ID" max_length="40" name="facility_id" type="string"/>
+        <element label="Facility ManagerFacility Manager" max_length="32" name="facility_managerfacility_manager" reference="sys_user" type="reference"/>
+        <element choice="1" label="Sport Type" max_length="40" name="sport_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cricket" sequence="0" value="Cricket"/>
+                <element inactive_on_update="false" label="Basketball" sequence="3" value="Basketball"/>
+                <element inactive_on_update="false" label="Badminton" sequence="1" value="Badminton"/>
+                <element inactive_on_update="false" label="Volleyball" sequence="2" value="Volleyball"/>
+            </choice>
+        </element>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inactive" sequence="1" value="Inactive"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="Active"/>
+                <element inactive_on_update="false" label="Under Maintenance" sequence="2" value="Under Maintenance"/>
+            </choice>
+        </element>
+        <element label="Facility Name" max_length="40" name="facility_name" type="string"/>
+    </element>
+</database>
