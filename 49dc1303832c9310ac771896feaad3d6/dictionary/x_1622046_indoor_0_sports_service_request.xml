@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="ca5f1f47832c9310ac771896feaad3f1" label="Sports Service Request" max_length="40" name="x_1622046_indoor_0_sports_service_request" type="collection">
         <element label="Resolution Notes" max_length="40" name="resolution_notes" type="string"/>
-        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+        <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Low" sequence="0" value="Low"/>
                 <element inactive_on_update="false" label="High" sequence="2" value="High"/>
@@ -10,13 +10,13 @@
             </choice>
         </element>
         <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
-        <element label="Description" max_length="40" name="description" type="string"/>
-        <element label="Sports Facility" max_length="32" name="sports_facility" reference="x_1622046_indoor_0_sports_facility" type="reference"/>
-        <element label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element label="Description" mandatory="true" max_length="40" name="description" type="string"/>
+        <element label="Sports Facility" mandatory="true" max_length="32" name="sports_facility" reference="x_1622046_indoor_0_sports_facility" type="reference"/>
+        <element label="Requested By" mandatory="true" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Equipment" max_length="32" name="equipment" reference="x_1622046_indoor_0_sports_equipment" type="reference"/>
         <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
-        <element choice="1" label="Request Type" max_length="40" name="request_type" type="choice">
+        <element choice="1" label="Request Type" mandatory="true" max_length="40" name="request_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Maintenance" sequence="0" value="Maintenance"/>
                 <element inactive_on_update="false" label="Complaint" sequence="2" value="Complaint"/>
@@ -31,7 +31,7 @@
                 <element inactive_on_update="false" label="Approved" sequence="2" value="Approved"/>
             </choice>
         </element>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
+        <element choice="1" label="State" mandatory="true" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="New"/>
                 <element inactive_on_update="false" label="In Progress" sequence="2" value="In Progress"/>
