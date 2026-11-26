@@ -7,26 +7,26 @@
         <condition/>
         <controlled_by_refs/>
         <decision_type>allow</decision_type>
-        <description/>
+        <description>Allow create for records in x_1622046_indoor_0_facility_inspection, if the ACL script returns true.</description>
         <local_or_existing>Existing</local_or_existing>
         <name>x_1622046_indoor_0_facility_inspection</name>
         <operation display_value="create">create</operation>
         <script><![CDATA[answer = gs.hasRole('admin') ||
-         gs.hasRole('sports_admin') ||
-         gs.hasRole('sports_facility_manager');]]></script>
+         gs.hasRole('x_1622046_indoor_0.sports_admin') ||
+         gs.hasRole('x_1622046_indoor_0.sports_facility_manager');]]></script>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-11-19 11:14:44</sys_created_on>
         <sys_id>6d09ec1783a4d310ac771896feaad3f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_1622046_indoor_0_facility_inspection</sys_name>
         <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
         <sys_update_name>sys_security_acl_6d09ec1783a4d310ac771896feaad3f8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-19 11:14:44</sys_updated_on>
+        <sys_updated_on>2026-11-24 05:10:50</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

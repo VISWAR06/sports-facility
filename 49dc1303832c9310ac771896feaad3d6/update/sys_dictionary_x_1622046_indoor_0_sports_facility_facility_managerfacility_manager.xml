@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Facility ManagerFacility Manager</column_label>
+        <column_label>Facility Manager </column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
         <name>x_1622046_indoor_0_sports_facility</name>
         <next_element/>
@@ -52,13 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-11-19 05:44:47</sys_created_on>
-        <sys_name>Facility ManagerFacility Manager</sys_name>
+        <sys_name>Facility Manager </sys_name>
         <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
         <sys_update_name>sys_dictionary_x_1622046_indoor_0_sports_facility_facility_managerfacility_manager</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-19 05:44:47</sys_updated_on>
+        <sys_updated_on>2026-11-25 04:51:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

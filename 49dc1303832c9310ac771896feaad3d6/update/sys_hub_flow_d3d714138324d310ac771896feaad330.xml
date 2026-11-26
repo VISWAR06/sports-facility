@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>false</active>
+        <active>true</active>
         <annotation/>
         <attributes>labelCacheCleanUpExecuted=true</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -30,7 +30,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -38,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d3d714138324d310ac771896feaad330</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Sports Request Resolution Notification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Indoor Sports Facility Operations Management" source="x_1622046_indoor_0">49dc1303832c9310ac771896feaad3d6</sys_package>
@@ -46,7 +46,7 @@
         <sys_scope display_value="Indoor Sports Facility Operations Management">49dc1303832c9310ac771896feaad3d6</sys_scope>
         <sys_update_name>sys_hub_flow_d3d714138324d310ac771896feaad330</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-19 10:11:09</sys_updated_on>
+        <sys_updated_on>2026-11-26 06:34:46</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
